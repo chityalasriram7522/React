@@ -1,9 +1,10 @@
 
 import { useNavigate } from "react-router-dom";
-
+import { useLocation } from "react-router-dom";
 
 function About() {
   const navigate = useNavigate();
+  const location =useLocation();
 
   return(
     <>
@@ -19,6 +20,14 @@ function About() {
 >
   Back
 </button>
+    <button
+  onClick={() => navigate(-1)}
+>
+  Move forward
+</button>
+<h1>{location.state.name}</h1>
+      <h1>{location.state.age}</h1>
+
       </>
   )
   

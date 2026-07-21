@@ -8,16 +8,17 @@ function Home() {
     <>
       <h1>Home Page</h1>
 
-      {/* <button
-        onClick={() => navigate("/about")}
+      <button
+        onClick={() => navigate("/about",{
+          state:{
+            name:"babu",
+            age:21
+          }
+        })}
       >
         Go To About
-      </button> */}
-            <button
-  onClick={() => navigate(1)}
->
-  Back
-</button>
+      </button>
+   
     </>
   );
 }
