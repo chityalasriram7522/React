@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 
-function Login() {
 
+function Login() {
   const { id } = useParams();
 
   return (
